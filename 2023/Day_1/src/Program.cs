@@ -8,4 +8,4 @@ builder.Services.AddSingleton<Input>();
 builder.Services.AddSingleton<IPuzzle, Day1>();
 using IHost host = builder.Build();
 
-await host.Services.ExecutePuzzle(2022, 1);
+await host.Services.ExecutePuzzle(2023, 1);
