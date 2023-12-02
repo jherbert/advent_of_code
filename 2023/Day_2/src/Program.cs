@@ -1,5 +1,5 @@
 ﻿using Herbert.AdventOfCode.Common;
-using Herbert.AdventOfCode.Y2023.Day1;
+using Herbert.AdventOfCode.Y2023.Day2;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 

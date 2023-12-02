@@ -12,7 +12,8 @@ public static class IServiceProviderExtensions
         var input = provider.GetRequiredService<Input>();
 
         var inputString = await input.Get(year, day);
-        var result = await problem.Solve(inputString);
-        Console.WriteLine(result);
+        var (Puzzle1, Puzzle2) = await problem.Solve(inputString);
+        Console.WriteLine($"Puzzle 1: {Puzzle1}");
+        Console.WriteLine($"Puzzle 2: {Puzzle2}");
     }
 }

@@ -17,7 +17,7 @@ namespace Herbert.AdventOfCode.Y2023.Day1
             { "nine", 9 },
         };
 
-        public Task<string> Solve(string input)
+        public Task<(string Puzzle1, string Puzzle2)> Solve(string input)
         {
             var lines = input.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
             int value = 0;
@@ -47,7 +47,7 @@ namespace Herbert.AdventOfCode.Y2023.Day1
                 value += int.Parse(twoDigitNumber);
             }
 
-            return Task.FromResult(value.ToString());
+            return Task.FromResult((value.ToString(), value.ToString()));
         }
     }
 }

@@ -16,7 +16,7 @@ public class Day1_Tests
         var puzzle = new Day1();
         var result = await puzzle.Solve(input);
 
-        Assert.Equal("142", result);
+        Assert.Equal("142", result.Puzzle1);
     }
 
     [Theory]
@@ -36,6 +36,6 @@ public class Day1_Tests
         var puzzle = new Day1();
         var result = await puzzle.Solve(input);
 
-        Assert.Equal("281", result);
+        Assert.Equal("281", result.Puzzle2);
     }
 }
