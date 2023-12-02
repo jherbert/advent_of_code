@@ -32,10 +32,13 @@ namespace Herbert.AdventOfCode.Y2023.Day2
         {
             var game = new Game();
 
+            // Grab the game number. Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
             var gameNumber = line[..line.IndexOf(':')].Replace("Game ", string.Empty);
             game.GameNumber = int.Parse(gameNumber);
+            // Grab the rest of the line. 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
+            line = line[(line.IndexOf(':') + 1)..].Trim();
 
-            foreach (var setLine in line[(line.IndexOf(':') + 1)..].Split(';'))
+            foreach (var setLine in line.Split(';'))
             {
                 var set = setLine.Trim();
                 var colors = set.Split(',');
