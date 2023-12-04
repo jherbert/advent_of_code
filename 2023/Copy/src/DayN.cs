@@ -1,12 +1,12 @@
 using Herbert.AdventOfCode.Common;
 
-namespace Herbert.AdventOfCode.Y2023.Day1
+namespace Herbert.AdventOfCode.Y2023.DayN
 {
     public class DayN() : IPuzzle
     {
-        public Task<string> Solve(string input)
+        public Task<(string Puzzle1, string Puzzle2)> Solve(string input)
         {
-            return Task.FromResult("Hello World");
+            throw new NotImplementedException();
         }
     }
 }
